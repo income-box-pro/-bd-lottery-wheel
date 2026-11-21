@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>মেগা প্রমোশনাল লটারি — চাকা ঘুরিয়ে জিতে নিন ৳৫০০ থেকে ৳৫,০০০!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-dark: #050814;
+    --bg-card: rgba(15, 23, 52, 0.86);
+    --bg-glass: rgba(255, 255, 255, 0.06);
+    --border-glass: rgba(255, 255, 255, 0.16);
+    --gold-1: #fff099;
+    --gold-2: #ffb703;
+    --gold-3: #e06d06;
+    --neon-pink: #ff2a85;
+    --neon-cyan: #00f5d4;
+    --neon-violet: #a855f7;
+    --success: #10b981;
+    --pending: #facc15;
+    --text-main: #f8fafc;
+    --text-muted: #a5b4fc;
+    --shadow-glow: 0 0 45px rgba(255, 183, 3, 0.28);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+    background:
+      radial-gradient(circle at 12% 14%, rgba(255, 42, 133, 0.24), transparent 42%),
+      radial-gradient(circle at 88% 18%, rgba(0, 245, 212, 0.2), transparent 44%),
+      radial-gradient(circle at 75% 78%, rgba(168, 85, 247, 0.22), transparent 46%),
+      radial-gradient(circle at 28% 85%, rgba(255, 183, 3, 0.22), transparent 48%),
+      var(--bg-dark);
+    color: var(--text-main);
+    min-height: 100vh;
+    line-height: 1.62;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Top Promo Ticker */
+  .top-ticker {
+    background: linear-gradient(90deg, #991b1b, #e11d48, #b45309, #e11d48, #991b1b);
+    background-size: 200% 100%;
+    animation: tickerShift 8s linear infinite;
+    border-bottom: 1px solid rgba(255, 240, 153, 0.45);
+    padding: 9px 14px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #fffbeb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    box-shadow: 0 6px 24px rgba(225, 29, 72, 0.28);
+  }
+
+  @keyframes tickerShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+
+  .ticker-highlight {
+    color: #fff099;
+    text-shadow: 0 0 12px rgba(255, 240, 153, 0.45);
+  }
+
+  .promo-pill {
+    background: rgba(9, 13, 26, 0.55);
+    border: 1px solid rgba(255, 240, 153, 0.55);
+    color: var(--gold-1);
+    padding: 3px 11px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .timer-box {
+    background: #070b18;
+    color: var(--neon-cyan);
+    padding: 3px 12px;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 0.86rem;
+    border: 1px solid rgba(0, 245, 212, 0.45);
+    box-shadow: 0 0 14px rgba(0, 245, 212, 0.2);
+  }
+
+  .container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 24px 16px 76px;
+  }
+
+  /* Hero Header */
+  .hero {
+    text-align: center;
+    padding: 26px 18px 28px;
+    background: linear-gradient(155deg, rgba(255, 255, 255, 0.08), rgba(168, 85, 247, 0.06) 50%, rgba(0, 245, 212, 0.05));
+    border: 1px solid var(--border-glass);
+    border-radius: 26px;
+    box-shadow: var(--shadow-glow);
+    backdrop-filter: blur(16px);
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: 26px;
+    padding: 1px;
+    background: linear-gradient(120deg, rgba(255, 240, 153, 0.65), rgba(255, 42, 133, 0.35), rgba(0, 245, 212, 0.55));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .badge-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 14px;
+  }
+
+  .badge {
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 4px 13px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(255, 183, 3, 0.2), rgba(224, 109, 6, 0.14));
+    color: var(--gold-1);
+    border: 1px solid rgba(255, 240, 153, 0.42);
+  }
+
+  .badge.cyan {
+    background: linear-gradient(135deg, rgba(0, 245, 212, 0.16), rgba(14, 165, 233, 0.14));
+    color: var(--neon-cyan);
+    border-color: rgba(0, 245, 212, 0.4);
+  }
+
+  .badge.pink {
+    background: linear-gradient(135deg, rgba(255, 42, 133, 0.2), rgba(168, 85, 247, 0.16));
+    color: #fbcfe8;
+    border-color: rgba(255, 42, 133, 0.45);
+  }
+
+  h1 {
+    font-size: clamp(1.7rem, 4.2vw, 2.75rem);
+    font-weight: 800;
+    line-height: 1.24;
+    background: linear-gradient(95deg, #ffffff 0%, #fff099 42%, #ffb703 72%, #00f5d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 4px 18px rgba(255, 183, 3, 0.22));
+  }
+
+  .hero-sub {
+    max-width: 760px;
+    margin: 0 auto 18px;
+    color: #e2e8f0;
+    font-size: 1.04rem;
+  }
+
+  .color-gold {
+    color: var(--gold-1);
+    font-weight: 700;
+  }
+
+  .color-cyan {
+    color: var(--neon-cyan);
+    font-weight: 700;
+  }
+
+  .color-pink {
+    color: #ff7eb6;
+    font-weight: 700;
+  }
+
+  .stats-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+    gap: 11px;
+    margin-top: 12px;
+  }
+
+  .stat-item {
+    background: linear-gradient(160deg, rgba(11, 17, 38, 0.88), rgba(20, 28, 60, 0.72));
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 12px 12px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  .stat-item:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 240, 153, 0.4);
+  }
+
+  .stat-val {
+    font-size: 1.24rem;
+    font-weight: 800;
+    color: var(--gold-1);
+    font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+  }
+
+  .stat-item:nth-child(2) .stat-val { color: var(--neon-cyan); }
+  .stat-item:nth-child(3) .stat-val { color: #fde047; }
+  .stat-item:nth-child(4) .stat-val { color: #ff7eb6; }
+
+  .stat-lbl {
+    font-size: 0.82rem;
+    color: #cbd5e1;
+  }
+
+  /* Main Grid */
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 22px;
+    align-items: start;
+  }
+
+  @media (max-width: 860px) {
+    .main-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-glass);
+    border-radius: 24px;
+    padding: 21px;
+    backdrop-filter: blur(16px);
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.52);
+    margin-bottom: 20px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff099;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  /* User Profile & Serial Box */
+  .profile-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(0, 245, 212, 0.04));
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    padding: 12px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+  }
+
+  .profile-bar input {
+    flex: 1 1 180px;
+    background: #080d1c;
+    border: 1px solid rgba(0, 245, 212, 0.28);
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 0.96rem;
+    font-family: inherit;
+    outline: none;
+  }
+
+  .profile-bar input::placeholder {
+    color: #94a3b8;
+  }
+
+  .profile-bar input:focus {
+    border-color: var(--gold-2);
+    box-shadow: 0 0 0 3px rgba(255, 183, 3, 0.16);
+  }
+
+  .serial-tag {
+    background: linear-gradient(135deg, rgba(255, 183, 3, 0.25), rgba(255, 42, 133, 0.22));
+    border: 1px solid rgba(255, 240, 153, 0.55);
+    color: var(--gold-1);
+    padding: 8px 14px;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+  }
+
+  /* Spin Wheel Section */
+  .wheel-stage {
+    position: relative;
+    width: 314px;
+    height: 314px;
+    max-width: 100%;
+    margin: 14px auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wheel-pointer {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 0;
+    height: 0;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-top: 34px solid var(--gold-1);
+    filter: drop-shadow(0 5px 14px rgba(255, 240, 153, 0.8));
+  }
+
+  .wheel-ring {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 8px;
+    background: conic-gradient(var(--gold-1), var(--neon-pink), var(--neon-cyan), var(--neon-violet), var(--gold-2), var(--gold-1));
+    box-shadow: 0 0 38px rgba(255, 183, 3, 0.38), 0 0 60px rgba(255, 42, 133, 0.2), inset 0 0 22px rgba(0, 0, 0, 0.65);
+  }
+
+  #wheelCanvas {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    transition: transform 5.2s cubic-bezier(0.14, 0.88, 0.17, 1);
+  }
+
+  .center-cap {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ffffff, var(--gold-1), var(--gold-2), var(--gold-3));
+    color: #090d1a;
+    font-weight: 800;
+    font-size: 0.86rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.65);
+    border: 3px solid #fff;
+    z-index: 6;
+    pointer-events: none;
+  }
+
+  .btn-spin {
+    width: 100%;
+    padding: 15px 22px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #fff099, #ffb703, #f97316);
+    color: #080c18;
+    font-size: 1.16rem;
+    font-weight: 800;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(255, 183, 3, 0.45);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+
+  .btn-spin:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 36px rgba(255, 183, 3, 0.6);
+  }
+
+  .btn-spin:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+
+  .share-box {
+    margin-top: 14px;
+    background: linear-gradient(135deg, rgba(0, 245, 212, 0.12), rgba(14, 165, 233, 0.08));
+    border: 1px solid rgba(0, 245, 212, 0.36);
+    border-radius: 16px;
+    padding: 13px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .btn-share {
+    background: linear-gradient(135deg, #00f5d4, #38bdf8);
+    color: #051018;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-weight: 800;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0, 245, 212, 0.3);
+  }
+
+  /* Payment & Claim Box */
+  .payment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
+    gap: 8px;
+    margin: 12px 0;
+  }
+
+  .pay-chip {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: #e2e8f0;
+    border-radius: 12px;
+    padding: 9px 8px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+
+  .pay-chip:hover {
+    border-color: rgba(0, 245, 212, 0.45);
+  }
+
+  .pay-chip.active {
+    border-color: var(--gold-1);
+    background: linear-gradient(135deg, rgba(255, 183, 3, 0.26), rgba(255, 42, 133, 0.16));
+    color: var(--gold-1);
+    box-shadow: 0 0 16px rgba(255, 183, 3, 0.22);
+  }
+
+  .notice-amber {
+    background: linear-gradient(135deg, rgba(250, 204, 21, 0.15), rgba(249, 115, 22, 0.12));
+    border: 1px solid rgba(250, 204, 21, 0.5);
+    color: #fef08a;
+    border-radius: 14px;
+    padding: 12px 14px;
+    font-size: 0.92rem;
+    margin: 10px 0;
+  }
+
+  .btn-claim {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 18px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ff2a85, #f43f5e, #fb7185);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.08rem;
+    margin-top: 10px;
+    box-shadow: 0 10px 28px rgba(255, 42, 133, 0.45);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+
+  .btn-claim:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 34px rgba(255, 42, 133, 0.62);
+  }
+
+  .btn-pending-submit {
+    width: 100%;
+    padding: 11px 16px;
+    border-radius: 13px;
+    border: 1px solid rgba(250, 204, 21, 0.55);
+    background: rgba(250, 204, 21, 0.15);
+    color: #fde047;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 0.95rem;
+    cursor: pointer;
+    margin-top: 9px;
+  }
+
+  /* Lists: Fake Winners & Pending */
+  .feed-list {
+    max-height: 295px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-right: 4px;
+  }
+
+  .feed-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    padding: 10px 12px;
+    border-radius: 13px;
+    font-size: 0.9rem;
+  }
+
+  .feed-item.new-flash {
+    border-color: var(--neon-cyan);
+    background: rgba(0, 245, 212, 0.14);
+  }
+
+  .feed-item.pending-row {
+    border-color: rgba(250, 204, 21, 0.5);
+    background: rgba(250, 204, 21, 0.1);
+  }
+
+  .amount-pill {
+    background: rgba(16, 185, 129, 0.22);
+    color: #6ee7b7;
+    border: 1px solid rgba(16, 185, 129, 0.42);
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 0.83rem;
+    white-space: nowrap;
+  }
+
+  .pending-pill {
+    background: rgba(250, 204, 21, 0.22);
+    color: #fde047;
+    border: 1px solid rgba(250, 204, 21, 0.5);
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  /* Comments Section */
+  .comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .comment-form textarea {
+    width: 100%;
+    min-height: 76px;
+    background: #080d1c;
+    border: 1px solid rgba(168, 85, 247, 0.35);
+    border-radius: 14px;
+    padding: 11px 14px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 0.95rem;
+    resize: vertical;
+  }
+
+  .comment-form textarea::placeholder {
+    color: #94a3b8;
+  }
+
+  .btn-comment {
+    align-self: flex-start;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
+    color: #ffffff;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(139, 92, 246, 0.32);
+  }
+
+  .comment-item {
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 14px;
+    padding: 11px 13px;
+    margin-bottom: 9px;
+    color: #f1f5f9;
+  }
+
+  .comment-item.mine {
+    border-color: var(--gold-1);
+    background: linear-gradient(135deg, rgba(255, 183, 3, 0.14), rgba(0, 245, 212, 0.08));
+  }
+
+  .comment-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.82rem;
+    color: var(--neon-cyan);
+    margin-bottom: 4px;
+  }
+
+  /* Floating Live Toast */
+  .live-toast {
+    position: fixed;
+    bottom: 18px;
+    left: 18px;
+    z-index: 999;
+    max-width: 345px;
+    background: rgba(9, 14, 32, 0.96);
+    border: 1px solid rgba(255, 240, 153, 0.55);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.7);
+    border-radius: 16px;
+    padding: 12px 14px;
+    display: none;
+    align-items: center;
+    gap: 10px;
+    backdrop-filter: blur(14px);
+    color: #f8fafc;
+  }
+
+  .live-toast.show {
+    display: flex;
+  }
+
+  .dot-live {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--neon-cyan);
+    box-shadow: 0 0 12px var(--neon-cyan);
+    flex-shrink: 0;
+  }
+
+  /* Win Modal */
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(3, 6, 15, 0.85);
+    backdrop-filter: blur(10px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    z-index: 1000;
+  }
+
+  .modal-backdrop.open {
+    display: flex;
+  }
+
+  .modal-box {
+    width: 100%;
+    max-width: 465px;
+    background: linear-gradient(160deg, #121b38, #0b1124);
+    border: 1px solid rgba(255, 240, 153, 0.6);
+    border-radius: 24px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 25px 65px rgba(0, 0, 0, 0.8);
+  }
+
+  .prize-highlight {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--gold-1);
+    margin: 8px 0;
+    text-shadow: 0 0 22px rgba(255, 240, 153, 0.4);
+    font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+  }
+
+  .close-btn {
+    margin-top: 12px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    color: #cbd5e1;
+    padding: 7px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+</style>
+</head>
+<body>
+
+<div class="top-ticker">
+  <span>🔥 <strong class="ticker-highlight">কোম্পানি প্রচার লটারি:</strong> শুধুমাত্র আমাদের কোম্পানির প্রচারের উদ্দেশ্যে এই বিশেষ লটারি চলছে!</span>
+  <div style="display:flex;align-items:center;gap:8px;">
+    <span class="promo-pill">সর্বনিম্ন উইন ৳৫০০</span>
+    <span class="timer-box" id="countdown">০৪:৫৯</span>
+  </div>
+</div>
+
+<div class="container">
+  <section class="hero">
+    <div class="badge-row">
+      <span class="badge">✨ ১০কে এইচডি প্রিমিয়াম এডিশন</span>
+      <span class="badge cyan">👥 মোট অংশগ্রহণকারী সিরিয়াল: <span id="heroSerialCount">50082+</span></span>
+      <span class="badge pink">⏳ পেমেন্ট সময়: ২৪ ঘণ্টা</span>
+    </div>
+    <h1>চাকা ঘুরিয়ে জিতে নিন ৳৫০০ থেকে ৳৫,০০০!</h1>
+    <p class="hero-sub">
+      এটি একটি বিশেষ লটারি যা শুধুমাত্র আমাদের <span class="color-gold">কোম্পানির প্রচারের</span> জন্য চালু করা হয়েছে। পুরস্কারের পেমেন্ট নিতে প্রথমে <span class="color-cyan">রেজিস্ট্রেশন করুন</span>। পেমেন্ট পেতে <span class="color-pink">২৪ ঘণ্টা সময় লাগবে</span>। যত বেশি শেয়ার করবেন, তত বেশি টাকা ও বোনাস পাবেন!
+    </p>
+    <div class="stats-strip">
+      <div class="stat-item">
+        <div class="stat-val">৳৫০০</div>
+        <div class="stat-lbl">সর্বনিম্ন নিশ্চিত পুরস্কার</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val" id="serialStat">50082+</div>
+        <div class="stat-lbl">আপনার ইউজার সিরিয়াল</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val">২৪ ঘণ্টা</div>
+        <div class="stat-lbl">পেমেন্ট প্রসেসিং সময়</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val" id="bonusStat">+৳০</div>
+        <div class="stat-lbl">শেয়ার বোনাস</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="main-grid">
+    <!-- Left Column: Profile + Spin Wheel + Comments -->
+    <div>
+      <div class="card">
+        <div class="card-title">
+          <span>🎯 আপনার প্রোফাইল ও লাকি স্পিন</span>
+          <span class="serial-tag" id="serialBadge">সিরিয়াল: #50082</span>
+        </div>
+
+        <div class="profile-bar">
+          <input type="text" id="userNameInput" placeholder="আপনার নাম লিখুন (যেমন: তানভীর হাসান)" maxlength="40">
+          <button type="button" class="btn-comment" id="saveNameBtn">নাম সেভ করুন</button>
+        </div>
+
+        <div class="wheel-stage">
+          <div class="wheel-pointer"></div>
+          <div class="wheel-ring">
+            <canvas id="wheelCanvas" width="300" height="300"></canvas>
+          </div>
+          <div class="center-cap">MEGA<br>WIN</div>
+        </div>
+
+        <button type="button" class="btn-spin" id="spinBtn">🎡 চাকা ঘোরান ও পুরস্কার জিতুন</button>
+
+        <div class="share-box">
+          <div>
+            <div style="font-weight:700;color:var(--neon-cyan);">🚀 যত বেশি শেয়ার করবেন, তত বেশি টাকা পাবেন!</div>
+            <div style="font-size:0.85rem;color:#e2e8f0;">প্রতি শেয়ারে অতিরিক্ত বোনাস যুক্ত হবে (শেয়ার সংখ্যা: <strong style="color:var(--gold-1);" id="shareCountText">0</strong>)</div>
+          </div>
+          <button type="button" class="btn-share" id="shareBtn">এখনই শেয়ার করুন</button>
+        </div>
+      </div>
+
+      <!-- Local-Only User Comment Section -->
+      <div class="card">
+        <div class="card-title">
+          <span>💬 ইউজার কমেন্ট বক্স</span>
+          <span style="font-size:0.82rem;color:var(--neon-cyan);">আপনার কমেন্ট শুধু আপনার ডিভাইসে সেভ থাকবে</span>
+        </div>
+        <p style="font-size:0.87rem;color:#cbd5e1;margin-bottom:10px;">
+          আপনি যে কমেন্ট করবেন তা অন্য কেউ দেখতে পাবে না; শুধু আপনি আপনার এই মোবাইল/ব্রাউজার থেকে পুনরায় ঢুকলে নিজের কমেন্ট দেখতে পাবেন।
+        </p>
+
+        <form class="comment-form" id="commentForm">
+          <textarea id="commentInput" placeholder="আপনার মতামত বা অনুভূতি লিখুন..."></textarea>
+          <button type="submit" class="btn-comment">কমেন্ট পোস্ট করুন</button>
+        </form>
+
+        <div id="myCommentsContainer"></div>
+
+        <div style="margin-top:12px;">
+          <div class="comment-item">
+            <div class="comment-meta"><strong>রাকিবুল ইসলাম • ঢাকা</strong><span style="color:#94a3b8;">১৪ মিনিট আগে</span></div>
+            <div>কোম্পানির প্রচার লটারিতে ৫০০ টাকা পেয়েছি, ২৪ ঘণ্টার মধ্যে বিকাশে পেমেন্ট পেয়ে গেছি!</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-meta"><strong>সুমাইয়া আক্তার • চট্টগ্রাম</strong><span style="color:#94a3b8;">২৭ মিনিট আগে</span></div>
+            <div>রেজিস্ট্রেশন করার পর কাজ করেছে। শেয়ার করে বোনাসও পেলাম।</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-meta"><strong>নাজমুল হুদা • রাজশাহী</strong><span style="color:#94a3b8;">৪১ মিনিট আগে</span></div>
+            <div>নগদে টাকা এসেছে, দারুণ অফার!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Payment Methods + Pending List + 5000 Fake Withdraw List -->
+    <div>
+      <div class="card">
+        <div class="card-title">
+          <span>💳 পেমেন্ট মেথড ও দাবি</span>
+          <span style="font-size:0.82rem;color:var(--neon-cyan);">মিনিমাম ৳৫০০</span>
+        </div>
+        <p style="font-size:0.92rem;color:#e2e8f0;">
+          আপনার পছন্দের পেমেন্ট মাধ্যম নির্বাচন করুন। পুরস্কারের পেমেন্ট পেতে অবশ্যই <span class="color-gold">রেজিস্ট্রেশন করুন</span>।
+        </p>
+
+        <div class="payment-grid" id="paymentMethods">
+          <div class="pay-chip active" data-method="bKash">bKash (বিকাশ)</div>
+          <div class="pay-chip" data-method="Nagad">Nagad (নগদ)</div>
+          <div class="pay-chip" data-method="Mobile Recharge">মোবাইল রিচার্জ</div>
+          <div class="pay-chip" data-method="Bank">Bank (ব্যাংক)</div>
+          <div class="pay-chip" data-method="Bitcoin">Bitcoin</div>
+        </div>
+
+        <div class="notice-amber">
+          ⚠️ <strong>গুরুত্বপূর্ণ:</strong> পুরস্কারের পেমেন্ট পেতে রেজিস্ট্রেশন করুন। পেমেন্ট পেতে <strong>২৪ ঘণ্টা সময় লাগবে</strong>।
+        </div>
+
+        <a href="https://auctionr.org/4/8ac8b13d57557a6ab6b38246a748d40c" target="_blank" rel="noopener noreferrer" class="btn-claim" id="directClaimLink">✅ রেজিস্ট্রেশন করুন ও পুরস্কার দাবি করুন</a>
+        <button type="button" class="btn-pending-submit" id="submitPendingBtn">⏳ উইথড্র রিকোয়েস্ট সাবমিট করুন (Pending স্ট্যাটাস দেখুন)</button>
+      </div>
+
+      <!-- Pending Status List (User-Specific Pending Shown Only to Current Device/IP) -->
+      <div class="card">
+        <div class="card-title">
+          <span>⏳ পেন্ডিং উইথড্র তালিকা</span>
+          <span class="pending-pill">২৪h প্রসেসিং</span>
+        </div>
+        <p style="font-size:0.85rem;color:#cbd5e1;margin-bottom:10px;">
+          আপনি উইথড্র সাবমিট করলে শুধুমাত্র আপনার এই ডিভাইস/আইপি থেকে নিচে আপনার <span style="color:#fde047;font-weight:700;">Pending</span> স্ট্যাটাস দেখা যাবে।
+        </p>
+        <div class="feed-list" id="pendingList">
+          <div class="feed-item pending-row">
+            <div>
+              <div style="font-weight:700;color:#fde047;">সিস্টেম কিউ আপডেট</div>
+              <div style="font-size:0.8rem;color:#cbd5e1;">সর্বোচ্চ ২৪ ঘণ্টার মধ্যে পেমেন্ট যাচাই চলছে</div>
+            </div>
+            <span class="pending-pill">Queue Active</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5,000 Fake Withdraw List (5, 6, 3, 9 sec intervals) -->
+      <div class="card">
+        <div class="card-title">
+          <span>🏆 লাইভ উইথড্র তালিকা (৫,০০০+ ইউজার)</span>
+          <span class="amount-pill" id="liveCounterPill">50082+ ইউজার</span>
+        </div>
+        <p style="font-size:0.85rem;color:#cbd5e1;margin-bottom:10px;">
+          প্রতি ৫, ৬, ৩, ৯ সেকেন্ড পরপর নতুন বিজয়ীদের নাম ও সিরিয়াল নম্বর আপডেট হচ্ছে।
+        </p>
+        <div class="feed-list" id="withdrawFeed"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Floating Live Toast -->
+<div class="live-toast" id="liveToast">
+  <span class="dot-live"></span>
+  <div id="liveToastText" style="font-size:0.88rem;line-height:1.4;"></div>
+</div>
+
+<!-- Win Modal -->
+<div class="modal-backdrop" id="winModal">
+  <div class="modal-box">
+    <div style="font-size:0.92rem;color:var(--neon-cyan);font-weight:700;">🎉 অভিনন্দন! আপনি জয়ী হয়েছেন</div>
+    <div class="prize-highlight" id="modalPrizeAmount">৳১,০০০</div>
+    <p style="font-size:0.93rem;color:#e2e8f0;margin-bottom:10px;">
+      বিজয়ী: <strong style="color:var(--gold-1);" id="modalUserName">সম্মানিত ইউজার</strong> • সিরিয়াল: <strong style="color:var(--neon-cyan);" id="modalSerial">#50082</strong>
+    </p>
+    <div class="notice-amber" style="text-align:left;">
+      • পুরস্কারের পেমেন্ট নিতে প্রথমে <strong>রেজিস্ট্রেশন করুন</strong>।<br>
+      • পেমেন্ট পেতে <strong>২৪ ঘণ্টা সময় লাগবে</strong>।<br>
+      • যত বেশি শেয়ার করবেন, তত বেশি টাকা পাবেন!
+    </div>
+    <a href="https://auctionr.org/4/8ac8b13d57557a6ab6b38246a748d40c" target="_blank" rel="noopener noreferrer" class="btn-claim">🎁 এখনই রেজিস্ট্রেশন ও দাবি করুন</a>
+    <button type="button" class="btn-pending-submit" id="modalPendingBtn">⏳ উইথড্র সাবমিট করে Pending দেখুন</button>
+    <button type="button" class="close-btn" id="closeModalBtn">বন্ধ করুন</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  const BASE_SERIAL = 50082;
+  const STORAGE_KEYS = {
+    name: "mega_lottery_user_name_v1",
+    serial: "mega_lottery_user_serial_v1",
+    comments: "mega_lottery_local_comments_v1",
+    pending: "mega_lottery_local_pending_v1",
+    shares: "mega_lottery_local_shares_v1",
+    prize: "mega_lottery_last_prize_v1"
+  };
+
+  // Generate 5,000 realistic Bangladeshi names & entries
+  const firstNames = [
+    "আরিফ", "তানভীর", "মেহেদী", "সাকিব", "রাফি", "নাফিস", "ইমরান", "শাওন", "সাব্বির", "জুবায়ের",
+    "নুসরাত", "মিম", "তাসনিম", "শ্রাবণী", "ফারজানা", "মাহিয়া", "রূপা", "সাদিয়া", "আফসানা", "তানজিলা",
+    "হাসান", "কবির", "রনি", "সুমন", "আলমগীর", "জাহিদ", "মামুন", "সাইফুল", "রুবেল", "তারেক"
+  ];
+  const lastNames = [
+    "হাসান", "ইসলাম", "আহমেদ", "হোসেন", "চৌধুরী", "খান", "মণ্ডল", "সরকার", "রহমান", "আলী",
+    "খাতুন", "আক্তার", "বেগম", "উদ্দিন", "মল্লিক", "শেখ", "মিয়া", "দাস", "রায়", "ভুঁইয়া"
+  ];
+  const cities = ["ঢাকা", "চট্টগ্রাম", "সিলেট", "রাজশাহী", "খুলনা", "বরিশাল", "রংপুর", "কুমিল্লা", "গাজীপুর", "নারায়ণগঞ্জ"];
+  const methods = ["bKash", "Nagad", "Mobile Recharge", "Bank", "Bitcoin"];
+  const amounts = [500, 750, 1000, 1200, 1500, 2000, 2500, 3000, 5000];
+
+  const fakeUsers5000 = [];
+  for (let i = 0; i < 5000; i++) {
+    const fn = firstNames[i % firstNames.length];
+    const ln = lastNames[(i * 7 + 3) % lastNames.length];
+    const city = cities[(i * 5 + 2) % cities.length];
+    const method = methods[i % methods.length];
+    const amount = amounts[(i * 3) % amounts.length];
+    const serial = BASE_SERIAL + i + 1;
+    fakeUsers5000.push({
+      name: `${fn} ${ln}`,
+      city,
+      method,
+      amount,
+      serial
+    });
+  }
+
+  // Initialize user serial (> 50082)
+  let userSerial = parseInt(localStorage.getItem(STORAGE_KEYS.serial), 10);
+  if (!userSerial || userSerial <= BASE_SERIAL) {
+    userSerial = BASE_SERIAL + Math.floor(Math.random() * 450) + 18;
+    localStorage.setItem(STORAGE_KEYS.serial, String(userSerial));
+  }
+
+  let userName = localStorage.getItem(STORAGE_KEYS.name) || "আপনার নাম";
+  let shareCount = parseInt(localStorage.getItem(STORAGE_KEYS.shares), 10) || 0;
+  let lastPrize = parseInt(localStorage.getItem(STORAGE_KEYS.prize), 10) || 1000;
+  let selectedMethod = "bKash";
+
+  const userNameInput = document.getElementById("userNameInput");
+  const saveNameBtn = document.getElementById("saveNameBtn");
+  const serialBadge = document.getElementById("serialBadge");
+  const serialStat = document.getElementById("serialStat");
+  const heroSerialCount = document.getElementById("heroSerialCount");
+  const liveCounterPill = document.getElementById("liveCounterPill");
+  const bonusStat = document.getElementById("bonusStat");
+  const shareCountText = document.getElementById("shareCountText");
+
+  function syncUserUI() {
+    userNameInput.value = localStorage.getItem(STORAGE_KEYS.name) || "";
+    serialBadge.textContent = `সিরিয়াল: #${userSerial}`;
+    serialStat.textContent = `${userSerial}+`;
+    heroSerialCount.textContent = `${userSerial}+`;
+    liveCounterPill.textContent = `${userSerial}+ ইউজার`;
+    shareCountText.textContent = String(shareCount);
+    bonusStat.textContent = `+৳${shareCount * 200}`;
+  }
+
+  saveNameBtn.addEventListener("click", () => {
+    const val = userNameInput.value.trim();
+    if (!val) {
+      alert("অনুগ্রহ করে আপনার নাম লিখুন।");
+      return;
+    }
+    userName = val;
+    localStorage.setItem(STORAGE_KEYS.name, userName);
+    alert(`নাম সেভ হয়েছে: ${userName} (সিরিয়াল #${userSerial})`);
+  });
+
+  // Payment method selection
+  document.querySelectorAll(".pay-chip").forEach((chip) => {
+    chip.addEventListener("click", () => {
+      document.querySelectorAll(".pay-chip").forEach((c) => c.classList.remove("active"));
+      chip.classList.add("active");
+      selectedMethod = chip.getAttribute("data-method");
+    });
+  });
+
+  // Draw Spin Wheel
+  const canvas = document.getElementById("wheelCanvas");
+  const ctx = canvas.getContext("2d");
+  const slices = [
+    { label: "৳৫০০", value: 500, color: "#ef4444" },
+    { label: "৳১,০০০", value: 1000, color: "#f59e0b" },
+    { label: "৳৭৫০", value: 750, color: "#10b981" },
+    { label: "৳২,০০০", value: 2000, color: "#3b82f6" },
+    { label: "৳৫০০", value: 500, color: "#ec4899" },
+    { label: "৳৩,০০০", value: 3000, color: "#8b5cf6" },
+    { label: "৳১,৫০০", value: 1500, color: "#06b6d4" },
+    { label: "৳৫,০০০", value: 5000, color: "#d97706" }
+  ];
+
+  function drawWheel() {
+    const cx = canvas.width / 2;
+    const cy = canvas.height / 2;
+    const r = canvas.width / 2 - 4;
+    const arc = (Math.PI * 2) / slices.length;
+
+    slices.forEach((s, idx) => {
+      const start = idx * arc;
+      const end = start + arc;
+
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.arc(cx, cy, r, start, end);
+      ctx.closePath();
+      ctx.fillStyle = s.color;
+      ctx.fill();
+      ctx.lineWidth = 2;
+      ctx.strokeStyle = "rgba(255,255,255,0.28)";
+      ctx.stroke();
+
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.rotate(start + arc / 2);
+      ctx.textAlign = "right";
+      ctx.fillStyle = "#ffffff";
+      ctx.font = "bold 17px 'Hind Siliguri', sans-serif";
+      ctx.fillText(s.label, r - 18, 6);
+      ctx.restore();
+    });
+  }
+  drawWheel();
+
+  let currentDeg = 0;
+  let spinning = false;
+  const spinBtn = document.getElementById("spinBtn");
+  const winModal = document.getElementById("winModal");
+  const modalPrizeAmount = document.getElementById("modalPrizeAmount");
+  const modalUserName = document.getElementById("modalUserName");
+  const modalSerial = document.getElementById("modalSerial");
+
+  spinBtn.addEventListener("click", () => {
+    if (spinning) return;
+    spinning = true;
+    spinBtn.disabled = true;
+
+    const chosenIndex = Math.floor(Math.random() * slices.length);
+    const chosenSlice = slices[chosenIndex];
+    const sliceDeg = 360 / slices.length;
+    const targetCenter = 270 - (chosenIndex * sliceDeg + sliceDeg / 2);
+    const extraSpins = 360 * 6;
+    const normalizedCurrent = currentDeg % 360;
+    let delta = targetCenter - normalizedCurrent;
+    if (delta < 0) delta += 360;
+
+    currentDeg += extraSpins + delta;
+    canvas.style.transform = `rotate(${currentDeg}deg)`;
+
+    setTimeout(() => {
+      spinning = false;
+      spinBtn.disabled = false;
+      const totalWon = chosenSlice.value + shareCount * 200;
+      lastPrize = totalWon;
+      localStorage.setItem(STORAGE_KEYS.prize, String(lastPrize));
+
+      const activeName = localStorage.getItem(STORAGE_KEYS.name) || "সম্মানিত ইউজার";
+      modalPrizeAmount.textContent = `৳${totalWon.toLocaleString("bn-BD")}`;
+      modalUserName.textContent = activeName;
+      modalSerial.textContent = `#${userSerial}`;
+      winModal.classList.add("open");
+    }, 5300);
+  });
+
+  document.getElementById("closeModalBtn").addEventListener("click", () => {
+    winModal.classList.remove("open");
+  });
+
+  // Share button increases bonus
+  document.getElementById("shareBtn").addEventListener("click", async () => {
+    shareCount += 1;
+    localStorage.setItem(STORAGE_KEYS.shares, String(shareCount));
+    syncUserUI();
+
+    const shareText = `মেগা লটারিতে চাকা ঘুরিয়ে জিতে নিন ৳৫০০ থেকে ৳৫,০০০! আমার সিরিয়াল #${userSerial}। লিঙ্ক: ${window.location.href}`;
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: "মেগা লটারি অফার", text: shareText, url: window.location.href });
+      } catch (_) {}
+    } else if (navigator.clipboard) {
+      navigator.clipboard.writeText(shareText).catch(() => {});
+    }
+    alert(`শেয়ার সফল হয়েছে! আপনার শেয়ার সংখ্যা ${shareCount} এবং বোনাস +৳${shareCount * 200} যুক্ত হয়েছে।`);
+  });
+
+  // User-specific Pending Withdrawal State (localStorage only)
+  const pendingListEl = document.getElementById("pendingList");
+
+  function renderMyPending() {
+    const myPending = JSON.parse(localStorage.getItem(STORAGE_KEYS.pending) || "[]");
+    if (!myPending.length) return;
+
+    myPending.forEach((item) => {
+      const div = document.createElement("div");
+      div.className = "feed-item pending-row";
+      div.innerHTML = `
+        <div>
+          <div style="font-weight:700;color:#fde047;">🟡 ${item.name} (#${item.serial}) — ৳${item.amount}</div>
+          <div style="font-size:0.8rem;color:#fef08a;">মেথড: ${item.method} • পেমেন্ট পেতে ২৪ ঘণ্টা সময় লাগবে</div>
+        </div>
+        <span class="pending-pill">Pending</span>
+      `;
+      pendingListEl.prepend(div);
+    });
+  }
+
+  function addMyPending() {
+    const activeName = localStorage.getItem(STORAGE_KEYS.name) || "আপনি";
+    const entry = {
+      name: activeName,
+      serial: userSerial,
+      amount: Math.max(500, lastPrize),
+      method: selectedMethod,
+      time: new Date().toLocaleTimeString("bn-BD", { hour: "2-digit", minute: "2-digit" })
+    };
+    const existing = JSON.parse(localStorage.getItem(STORAGE_KEYS.pending) || "[]");
+    existing.unshift(entry);
+    localStorage.setItem(STORAGE_KEYS.pending, JSON.stringify(existing));
+
+    const div = document.createElement("div");
+    div.className = "feed-item pending-row";
+    div.innerHTML = `
+      <div>
+        <div style="font-weight:700;color:#fde047;">🟡 ${entry.name} (#${entry.serial}) — ৳${entry.amount}</div>
+        <div style="font-size:0.8rem;color:#fef08a;">মেথড: ${entry.method} • পেমেন্ট পেতে ২৪ ঘণ্টা সময় লাগবে</div>
+      </div>
+      <span class="pending-pill">Pending</span>
+    `;
+    pendingListEl.prepend(div);
+    winModal.classList.remove("open");
+    alert(`আপনার উইথড্র রিকোয়েস্টটি Pending অবস্থায় সেভ হয়েছে (শুধুমাত্র আপনার এই ডিভাইস/আইপি থেকে দেখা যাবে)। পেমেন্ট পেতে ২৪ ঘণ্টা সময় লাগবে।`);
+  }
+
+  document.getElementById("submitPendingBtn").addEventListener("click", addMyPending);
+  document.getElementById("modalPendingBtn").addEventListener("click", addMyPending);
+
+  // 5,000 Fake Withdraw List at 5, 6, 3, 9 second intervals
+  const withdrawFeed = document.getElementById("withdrawFeed");
+  const liveToast = document.getElementById("liveToast");
+  const liveToastText = document.getElementById("liveToastText");
+  let fakeCursor = 0;
+
+  function pushFakeWinner() {
+    const u = fakeUsers5000[fakeCursor % fakeUsers5000.length];
+    fakeCursor += 1;
+
+    const row = document.createElement("div");
+    row.className = "feed-item new-flash";
+    row.innerHTML = `
+      <div>
+        <div style="font-weight:700;color:#f8fafc;">${u.name} <span style="color:var(--gold-1);font-size:0.82rem;">(#${u.serial})</span></div>
+        <div style="font-size:0.79rem;color:#cbd5e1;">${u.city} • <span style="color:var(--neon-cyan);">${u.method}</span> দিয়ে টাকা পেয়েছেন</div>
+      </div>
+      <span class="amount-pill">+৳${u.amount.toLocaleString("bn-BD")}</span>
+    `;
+    withdrawFeed.prepend(row);
+    setTimeout(() => row.classList.remove("new-flash"), 1400);
+
+    while (withdrawFeed.children.length > 18) {
+      withdrawFeed.removeChild(withdrawFeed.lastChild);
+    }
+
+    liveToastText.innerHTML = `<strong style="color:var(--gold-1);">${u.name}</strong> (#${u.serial}, ${u.city}) <strong style="color:var(--neon-cyan);">${u.method}</strong>-এ <strong style="color:#6ee7b7;">৳${u.amount}</strong> পেয়েছেন!`;
+    liveToast.classList.add("show");
+    setTimeout(() => liveToast.classList.remove("show"), 3200);
+  }
+
+  // Seed initial 6 entries
+  for (let i = 0; i < 6; i++) pushFakeWinner();
+
+  // Schedule intervals: 5s, 6s, 3s, 9s cycling
+  const intervals = [5000, 6000, 3000, 9000];
+  let stepIdx = 0;
+  function scheduleNextWinner() {
+    const delay = intervals[stepIdx % intervals.length];
+    stepIdx += 1;
+    setTimeout(() => {
+      pushFakeWinner();
+      scheduleNextWinner();
+    }, delay);
+  }
+  scheduleNextWinner();
+
+  // Local-only user comments (visible only to this device/browser)
+  const commentForm = document.getElementById("commentForm");
+  const commentInput = document.getElementById("commentInput");
+  const myCommentsContainer = document.getElementById("myCommentsContainer");
+
+  function renderMyComments() {
+    const comments = JSON.parse(localStorage.getItem(STORAGE_KEYS.comments) || "[]");
+    myCommentsContainer.innerHTML = "";
+    comments.forEach((c) => {
+      const box = document.createElement("div");
+      box.className = "comment-item mine";
+      box.innerHTML = `
+        <div class="comment-meta">
+          <strong style="color:var(--gold-1);">${c.name} (#${c.serial}) • শুধু আপনার ডিভাইসে দৃশ্যমান</strong>
+          <span style="color:#cbd5e1;">${c.time}</span>
+        </div>
+        <div>${c.text}</div>
+      `;
+      myCommentsContainer.appendChild(box);
+    });
+  }
+
+  commentForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const text = commentInput.value.trim();
+    if (!text) return;
+
+    const author = localStorage.getItem(STORAGE_KEYS.name) || "আপনি";
+    const comments = JSON.parse(localStorage.getItem(STORAGE_KEYS.comments) || "[]");
+    comments.unshift({
+      name: author,
+      serial: userSerial,
+      text,
+      time: "এইমাত্র"
+    });
+    localStorage.setItem(STORAGE_KEYS.comments, JSON.stringify(comments));
+    commentInput.value = "";
+    renderMyComments();
+  });
+
+  // Countdown timer (4m 59s)
+  let secLeft = 299;
+  const countdownEl = document.getElementById("countdown");
+  setInterval(() => {
+    if (secLeft > 0) secLeft -= 1;
+    const m = String(Math.floor(secLeft / 60)).padStart(2, "0");
+    const s = String(secLeft % 60).padStart(2, "0");
+    countdownEl.textContent = `${m}:${s}`;
+  }, 1000);
+
+  syncUserUI();
+  renderMyPending();
+  renderMyComments();
+})();
+</script>
+</body>
+</html>
